@@ -2266,7 +2266,7 @@ $(function() {
         source: Qualifications
     });
     $( "#enviar" ).click(function() {
-        $("loader").css("display", "block")
+        $("#loader").css("display", "block")
         var data = {
             "Title": $("#Title").val(),
             "Category": $("#Category").val(),
