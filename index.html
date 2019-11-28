@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict the best coutry to work at Google</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="application/javascript" src="predict.js"></script>
+
+</head>
+<body>
+
+<div style="padding: 10px 0px; text-align: center; font-size: 48px">
+    Qual país ideal para você trabalhar na Google?
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Title">Titulo</label>
+    <div class="col-md-8">
+        <input id="Title" name="textinput" type="text" placeholder="Insira o titulo da vaga"
+               class="form-control input-md">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Category">Categoria</label>
+    <div class="col-md-8">
+        <input id="Category" name="textinput" type="text" placeholder="Insira a categoria da gava"
+               class="form-control input-md">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Graduation">Qualificação 1</label>
+    <div class="col-md-8">
+        <input id="Graduation" name="textinput" type="text" placeholder="Insira sua Graduação"
+               class="form-control input-md">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Experience">Qualificação 2</label>
+    <div class="col-md-8">
+        <input id="Experience" name="textinput" type="text" placeholder="Insira sua experiência"
+               class="form-control input-md">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Qualifications">Qualificação 3</label>
+    <div class="col-md-8">
+        <input id="Qualifications" name="textinput" type="text" placeholder="Insira uma qualificação"
+               class="form-control input-md">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-md-4 control-label" for="enviar"></label>
+    <div class="col-md-4">
+        <button id="enviar" name="enviar" class="btn btn-success">Enviar</button>
+    </div>
+</div>
+
+<div class="form-group" id="showLocation" style="display: none;">
+    <label class="col-md-4 control-label" for="location">O melhor país para você se candidatas é:</label>
+    <div class="col-md-8">
+        <input id="location" name="textinput" type="text" placeholder="Insira uma qualificação"
+               class="form-control input-md">
+    </div>
+</div>
+</body>
+</html>
